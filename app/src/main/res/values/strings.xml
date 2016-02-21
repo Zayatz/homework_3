@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">homework_3</string>
+    <string name="wrong_num_input">Wrong number input</string>
+</resources>
