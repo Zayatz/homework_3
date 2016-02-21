@@ -37,55 +37,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick (View v) {
-        switch (v.getId()) {
-            case R.id.btnPlus:
-                if (isEmpty(edit1number) || isEmpty(edit2number)) {
-                    result.setText(getString(R.string.wrong_num_input));
-                    break;
-                }
-                else {
-                    result.setText(Sum(edit1number, edit2number));
-                    break;
-                }
+        if (isEmpty(edit1number) || isEmpty(edit2number)) {
+            result.setText(getString(R.string.wrong_num_input));
+        }
 
-            case R.id.btnMinus:
-                if (isEmpty(edit1number) || isEmpty(edit2number)) {
-                    result.setText(getString(R.string.wrong_num_input));
+        else {
+            int x = new Integer(edit1number.getText().toString());
+            int y = new Integer(edit2number.getText().toString());
+
+            switch (v.getId()) {
+                case R.id.btnPlus:
+                    result.setText(String.valueOf(x + y));
                     break;
-                }
-                else {
-                    result.setText(Dif(edit1number, edit2number));
+
+                case R.id.btnMinus:
+                    result.setText(String.valueOf(x - y));
                     break;
-                }
+            }
         }
     }
-
-    public static String Sum (EditText edit1, EditText edit2) {
-
-            int result;
-            int x = new Integer(edit1.getText().toString()).intValue();
-            int y = new Integer(edit2.getText().toString()).intValue();
-
-            result = x + y;
-
-            String strResult = String.valueOf(result);
-
-            return strResult;
-    }
-
-    public static String Dif (EditText edit1, EditText edit2) {
-
-        int result;
-        int x = new Integer(edit1.getText().toString()).intValue();
-        int y = new Integer(edit2.getText().toString()).intValue();
-
-        result = x - y;
-
-        String strResult = String.valueOf(result);
-
-        return strResult;
-    }
-
 
     private static boolean isEmpty(EditText edit) {
         return edit.getText().toString().trim().length() == 0;
