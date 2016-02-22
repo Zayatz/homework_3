@@ -10,4 +10,5 @@
     <dimen name="lndBottomMargin">25dp</dimen>
     <dimen name="lndBtnLeftMargin">30dp</dimen>
     <dimen name="lndPadding">35dp</dimen>
+    <dimen name="BtnPadding">25dp</dimen>
 </resources>

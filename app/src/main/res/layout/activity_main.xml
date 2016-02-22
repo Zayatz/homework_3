@@ -29,7 +29,6 @@
         style="@style/LayoutTheme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_gravity="center">
 
         <EditText
@@ -46,26 +45,21 @@
         style="@style/LayoutTheme"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:orientation="horizontal">
+        android:layout_gravity="center">
 
         <Button
-            style="@style/ButtonsStyle"
+            style="@style/LeftBtnStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btnPlus"
-            android:text="+"
-            android:layout_marginLeft="@dimen/BtnLeftMargin"
-            android:layout_marginRight="@dimen/BtnMargin"/>
+            android:text="+" />
 
         <Button
-            style="@style/ButtonsStyle"
+            style="@style/RightBtnStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btnMinus"
-            android:text="-"
-            android:layout_marginLeft="@dimen/BtnMargin"
-            />
+            android:text="-" />
 
     </LinearLayout>
 
@@ -73,7 +67,6 @@
         style="@style/LayoutTheme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_gravity="center_horizontal">
 
         <EditText
@@ -90,15 +83,13 @@
         style="@style/LayoutTheme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_gravity="center_horizontal">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/resView"
-            android:hint="result"
-            android:gravity="bottom" />
+            android:hint="@string/result" />
 
     </LinearLayout>
 

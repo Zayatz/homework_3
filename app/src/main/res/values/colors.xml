@@ -5,4 +5,5 @@
     <color name="colorAccent">#FF4081</color>
     <color name="background_color">#f8fc98</color>
     <color name="hint_color">#b4bcbc</color>
+    <color name="input_color">#FFFFFF</color>
 </resources>
