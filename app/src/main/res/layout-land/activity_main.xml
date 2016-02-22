@@ -12,10 +12,9 @@
     tools:context="com.zayatz.homework_3.MainActivity">
 
     <LinearLayout
-        style="@style/LndLayoutTheme"
+        style="@style/LndHintLayuotStyle"
         android:layout_width="wrap_content"
-        android:layout_height="39dp"
-        android:orientation="horizontal">
+        android:layout_height="wrap_content">
 
         <TextView
             android:layout_width="wrap_content"
@@ -30,71 +29,56 @@
         style="@style/LndLayoutTheme"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center"
-        android:padding="0dp">
+        android:layout_gravity="center">
 
         <EditText
-            style="@style/LndInputStyle"
+            style="@style/LndLeftInptStyle"
             android:layout_width="wrap_content"
-            android:layout_height="50dp"
             android:id="@+id/editFirst"
-            android:hint="add number"
-            android:inputType="number"
-            android:layout_marginRight="160dp"/>
+            android:hint="@string/add_number"
+            android:inputType="number" />
 
         <EditText
-            style="@style/LndInputStyle"
+            style="@style/LndRightInptStyle"
             android:layout_width="wrap_content"
-            android:layout_height="50dp"
             android:id="@+id/editSecond"
-            android:hint="add number"
-            android:inputType="number"
-            android:layout_marginLeft="160dp"/>
+            android:hint="@string/add_number"
+            android:inputType="number" />
 
     </LinearLayout>
 
     <LinearLayout
+        style="@style/LndBtnLayoutStyle"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:theme="@style/LndLayoutTheme"
-        android:padding="35dp">
+        android:layout_height="wrap_content">
 
         <Button
-            style="@style/LndButtonsStyle"
+            style="@style/LndLeftBtnStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btnPlus"
-            android:text="+"
-            android:layout_marginRight="130dp"
-            android:layout_marginLeft="30dp"/>
+            android:text="+" />
 
         <Button
-            style="@style/LndButtonsStyle"
+            style="@style/LndRightBtnStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btnMinus"
-            android:text="-"
-            android:layout_marginLeft="130dp"/>
+            android:text="-" />
 
     </LinearLayout>
 
 
     <LinearLayout
+        style="@style/LndResLayuotStyle"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center_horizontal"
-        android:theme="@style/LndLayoutTheme"
-        android:padding="25dp">
+        android:layout_height="wrap_content">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/resView"
-            android:hint="result"
-            android:gravity="bottom" />
+            android:hint="@string/result" />
 
     </LinearLayout>
 

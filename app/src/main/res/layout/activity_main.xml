@@ -12,10 +12,9 @@
     tools:context="com.zayatz.homework_3.MainActivity">
 
     <LinearLayout
+        style="@style/LayoutTheme"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        style="@style/LayoutTheme">
+        android:layout_height="wrap_content">
 
         <TextView
             android:layout_width="wrap_content"
@@ -27,18 +26,18 @@
     </LinearLayout>
 
     <LinearLayout
+        style="@style/LayoutTheme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_gravity="center"
-        style="@style/LayoutTheme">
+        android:layout_gravity="center">
 
         <EditText
             style="@style/inputStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/editFirst"
-            android:hint="add number"
+            android:hint="@string/add_number"
             android:inputType="number" />
 
     </LinearLayout>
@@ -56,8 +55,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/btnPlus"
             android:text="+"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="65dp"/>
+            android:layout_marginLeft="@dimen/BtnLeftMargin"
+            android:layout_marginRight="@dimen/BtnMargin"/>
 
         <Button
             style="@style/ButtonsStyle"
@@ -65,7 +64,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/btnMinus"
             android:text="-"
-            android:layout_marginLeft="65dp"
+            android:layout_marginLeft="@dimen/BtnMargin"
             />
 
     </LinearLayout>
@@ -82,7 +81,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/editSecond"
-            android:hint="add number"
+            android:hint="@string/add_number"
             android:inputType="number" />
 
     </LinearLayout>

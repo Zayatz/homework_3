@@ -4,4 +4,5 @@
     <string name="help">/* To use this calc:
         input numbers in fields and press button */</string>
     <string name="add_number">add number</string>
+    <string name="result">result</string>
 </resources>

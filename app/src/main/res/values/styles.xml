@@ -27,13 +27,44 @@
         <item name="android:orientation">horizontal</item>
     </style>
 
+    <style name="LndBtnLayoutStyle" parent="LndLayoutTheme">
+        <item name="android:padding">@dimen/lndPadding</item>
+    </style>
+    
+    <style name="LndHintLayuotStyle" parent="LndLayoutTheme">
+        <item name="android:paddingBottom">@dimen/lndBottomMargin</item>
+    </style>
+
+    <style name="LndResLayuotStyle" parent="LndLayoutTheme">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:padding">@dimen/lndBottomMargin</item>
+    </style>
+
     <style name="LndButtonsStyle" parent="AppTheme">
         <item name="android:gravity">center</item>
+    </style>
+    
+    <style name="LndLeftBtnStyle" parent="LndButtonsStyle">
+        <item name="android:layout_marginRight">@dimen/lndBtnMargin</item>
+        <item name="android:layout_marginLeft">@dimen/lndBtnLeftMargin</item>
+    </style>
+
+    <style name="LndRightBtnStyle" parent="LndButtonsStyle">
+        <item name="android:layout_marginLeft">@dimen/lndBtnMargin</item>
     </style>
 
     <style name="LndInputStyle" parent="AppTheme">
         <item name="android:background">#FFFFFF</item>
         <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">@dimen/lndEdtTxtHeight</item>
+    </style>
+
+    <style name="LndLeftInptStyle" parent="LndInputStyle">
+        <item name="android:layout_marginRight">@dimen/lndEdtMargin</item>
+    </style>
+
+    <style name="LndRightInptStyle" parent="LndInputStyle">
+        <item name="android:layout_marginLeft">@dimen/lndEdtMargin</item>
     </style>
 
 </resources>
