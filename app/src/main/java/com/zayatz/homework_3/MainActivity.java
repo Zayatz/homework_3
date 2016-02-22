@@ -37,12 +37,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick (View v) {
+        // перевіряє, чи заповнені обидва поля
         if (isEmpty(edit1number) || isEmpty(edit2number)) {
-            result.setText(getString(R.string.wrong_num_input));
+            result.setText(getString(R.string.wrong_num_input)); // error message
         }
 
         else {
-            int x = new Integer(edit1number.getText().toString());
+            int x = new Integer(edit1number.getText().toString()); //приводить дo int
             int y = new Integer(edit2number.getText().toString());
 
             switch (v.getId()) {
@@ -56,7 +57,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         }
     }
-
+    // перевіряє, чи заповнене поле. true - поле пусте
     private static boolean isEmpty(EditText edit) {
         return edit.getText().toString().trim().length() == 0;
     }

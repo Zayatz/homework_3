@@ -8,4 +8,32 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="LayoutTheme" parent="AppTheme">
+        <item name="android:layout_marginTop">25dp</item>
+        <item name="android:layout_marginBottom">25dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    
+    <style name="ButtonsStyle" parent="AppTheme">
+        <item name="android:padding">25dp</item>
+    </style>
+
+    <style name="inputStyle" parent="AppTheme">
+        <item name="android:background">#FFFFFF</item>
+    </style>
+
+    <style name="LndLayoutTheme" parent="AppTheme">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="LndButtonsStyle" parent="AppTheme">
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="LndInputStyle" parent="AppTheme">
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
 </resources>

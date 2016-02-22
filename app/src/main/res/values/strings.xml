@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Calculator</string>
     <string name="wrong_num_input">Wrong number input.</string>
+    <string name="help">/* To use this calc:
+        input numbers in fields and press button */</string>
+    <string name="add_number">add number</string>
 </resources>
